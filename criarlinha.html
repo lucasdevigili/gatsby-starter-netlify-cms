@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastrar turmas.css">
+    <link rel="stylesheet" href="criamdo linha.css">
+    <title>Alunos Cadastrados</title>
+</head>
+<body>
+    <header>
+        <a href="site-principal.htm"><img src="logo.png" alt="logo escola" class="logo"></a>
+    </header>
+
+    <nav>
+        <div id="voltar"><a href="Cadastrar turmas.html"><button class="voltar">voltar</button></a></div>
+        <h1>Alunos Cadastrados</h1>
+    </nav>
+
+    <div id="alunosCadastrados" class="alunosCadastrados1">
+        <input type="button" value="Cadastrar novo aluno" id="botao" class="botao1">
+    </div> 
+
+    <div id="id01" class="modal" hidden>
+        <div class="modal-content">
+            <div>
+                <span id="botaoDesaparecer">&times;</span>
+            </div>
+            
+            <form id="form">
+                <label for="labelmatricula">Numero da matrícula:</label>
+                <input type="number" class="matricula" placeholder="Digite a matricula do aluno">
+
+                <label for="labelNomeTurma">Nome do aluno:</label>
+                <input type="text" class="nomeAluno" placeholder="Digite o nome do aluno">
+
+                <label for="labelemail">E-mail do aluno</label>
+                <input type="email" class="email" placeholder="Digite o E-mail do aluno" required>
+
+                <div class="erro"></div>
+
+                <label for="labeltelefone">Telefone do aluno</label>
+                <input type="number" class="telefone" placeholder="Digite o telefone do aluno">
+
+                <label for="labelnota1">Nota 1</label>
+                <input type="number" class="nota1" placeholder="Digite a nota 1">
+
+                <label for="labelnota2">Nota 2</label>
+                <input type="number" class="nota2" placeholder="Digite a nota 2">
+
+                <label for="labelnota3">Nota 3</label>
+                <input type="number" class="nota3" placeholder="Digite a nota 3">
+
+                <input type="button" class="btnSalvar" value="Salvar">
+            </form>
+        </div>
+    </div>
+
+    <div id="alunos"></div>
+
+    <script src="criar linha.js" type="module"></script>    
+</body>
+</html>

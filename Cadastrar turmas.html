@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastrar turmas.css">
+    <title>Turmas Cadastradas</title>
+</head>
+<body>
+    <header>
+        <a href="site-principal.htm"><img src="logo.png" alt="logo escola" class="logo"></a>
+    </header>
+
+    <nav>
+        <h1>Turmas Cadastradas</h1>
+    </nav>
+
+    <div id="turmasCadastradas" class="turmasCadastradas1">
+        <input type="button" value="Cadastrar nova turma" id="botao" class="botao1">
+    </div> 
+
+    <div id="id01" class="modal" hidden>
+        <div class="modal-content">
+            <div>
+                <span id="botaoDesaparecer">&times;</span>
+            </div>
+            
+            <form id="form">
+                <label for="labelNumeroTurma">Numero da turma:</label>
+                <input type="number" class="numeroTurma" placeholder="Digite o número da turma">
+
+                <label for="labelNomeTurma">Nome da turma:</label>
+                <input type="text" class="nomeTurma" placeholder="Digite o nome da turma">
+
+                <p>&nbsp;&nbsp;Turno:</p>
+                <div class="horario">
+                    <input type="radio" id="matutino" class="horarioTurmaMatutino" name="periodo"  value="Matutino">
+                    <label for="matutino">Matutino</label>
+                </div>
+                <div class="horario">
+                    <input type="radio" id="vespertino" class="horarioTurmaVespertino" name="periodo"  value="Vespertino">
+                    <label for="vespertino">Vespertino</label>
+                </div>
+                <label for="labelRegente">Regente da turma</label>
+                <input type="text" class="regente" placeholder="Digite o regente da turma" required>
+
+                <input type="button" class="btnSalvar" value="Salvar">
+            </form>
+        </div>
+    </div>
+
+    <div id="turmas" class="container"></div>
+    
+
+    <script src="Cadastrar turmas.js" type="module"></script>    
+</body>
+</html>

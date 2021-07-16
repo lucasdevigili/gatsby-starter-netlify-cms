@@ -1,0 +1,129 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    background-color: rgba(245, 222, 179, 0.5);
+}
+
+header {
+    text-align: center;
+    background-image: url(barnard-castle-school.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    align-items: center;
+    transition: all 2s; 
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+
+header img {
+    border-radius: 100%;
+
+}
+
+nav {
+    cursor: default;
+    color: black;
+    text-align: center;
+}
+
+.erro{
+    color: red;
+}
+
+#alunos {
+    margin: 30px 160px;
+}
+
+.botao1{
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+span{
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+span:hover{
+    color: rgba(201, 57, 57, 0.596);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.185);   
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label{
+    padding: 10px;
+}
+
+input{
+    border: none;
+    background-color: rgba(95, 91, 91, 0.192);
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+.salvarAluno{
+    display: block;
+    background-color: rgba(69, 69, 76, 0.582);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.salvarAluno:hover{
+    background-color: rgb(136, 91, 91);
+}
+.aluno {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(71, 67, 67, 0.288);
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    margin: 10px;
+}
+.botaoExcluir{    
+    font-size: 10px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+
+.editar{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#voltar {
+    margin-top: 0px;
+    margin-right: 1500px;
+    cursor: pointer;
+
+}
+
+.voltar {
+    margin-top: 15px;
+    cursor: pointer;
+}
